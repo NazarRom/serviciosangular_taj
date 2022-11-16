@@ -1,0 +1,8 @@
+<div *ngFor="let comic of comics" class="card" style="width: 18rem; float: left; margin: 3rem;">
+    <img src="{{comic.imagen}}" class="card-img-top" alt="foto" style="width: 285px; height:385px">
+    <div class="card-body">
+      <h5 class="card-title">{{comic.titulo}}</h5>
+      <p class="card-text">{{comic.descripcion}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
