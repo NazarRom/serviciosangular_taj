@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  urlApiEmpleados: "https://apiempleadosfullstack.azurewebsites.net/"
 };

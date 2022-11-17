@@ -12,6 +12,8 @@ import { ComicServices } from './services/comic.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component'
 import { PersonaService } from './services/persona.service';
+import { EmpleadosService } from './services/empleados.service';
+import { EmpleadossalarioComponent } from './components/empleadossalario/empleadossalario.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,14 +22,15 @@ import { PersonaService } from './services/persona.service';
     MenuComponent,
     HomeComponent,
     ComicsinyeccionComponent,
-    PersonasapiComponent
+    PersonasapiComponent,
+    EmpleadossalarioComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,HttpClientModule
   ],
-  providers: [ComicServices,PersonaService],
+  providers: [ComicServices,PersonaService,EmpleadosService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
