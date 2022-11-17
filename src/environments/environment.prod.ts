@@ -1,4 +1,6 @@
 export const environment = {
   production: true,
-  urlApiEmpleados: "https://apiempleadosfullstack.azurewebsites.net/"
+  urlApiPersonas : "https://servicioapipersonasmvcpgs.azurewebsites.net/",
+  urlApiEmpleados: "https://apiempleadosfullstack.azurewebsites.net/",
+  urlPlantilla: "https://apiplantillacore.azurewebsites.net/"
 };

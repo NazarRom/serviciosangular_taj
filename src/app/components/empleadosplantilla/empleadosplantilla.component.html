@@ -1,0 +1,31 @@
+<div>
+    <form #funcionForm="ngForm">
+    <label>Escoja Funcion</label>
+    <select #cajafuncion name="cajafuncion" size="3" multiple >
+        <option *ngFor="let fun of funcion">
+            {{fun}}
+        </option>
+    </select>
+    <button (click)="mostrarFuncionMultiple()">Mostar Funcion</button>
+    </form>
+
+
+    <h1>Plantilla</h1>
+    <table class="table table-info">
+        <thead>
+            <tr>
+               
+                <th>Apellido</th>
+                <th>Funcion</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let plt of plantilla">
+                <td>{{plt.apellido}}</td>
+                <td>{{plt.funcion}}</td>
+                <td>{{plt.turno}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

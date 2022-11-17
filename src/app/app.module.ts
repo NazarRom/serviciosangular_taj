@@ -15,6 +15,10 @@ import { PersonaService } from './services/persona.service';
 import { EmpleadosService } from './services/empleados.service';
 import { EmpleadossalarioComponent } from './components/empleadossalario/empleadossalario.component';
 import { EmpleadosoficioComponent } from './components/empleadosoficio/empleadosoficio.component';
+import { EmpleadosplantillaComponent } from './components/empleadosplantilla/empleadosplantilla.component';
+import { PlantillaService } from './services/plantilla.service';
+import { EmpleadosroutingComponent } from './components/empleadosrouting/empleadosrouting.component';
+import { DetallesempleadoComponent } from './components/detallesempleado/detallesempleado.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,14 +29,17 @@ import { EmpleadosoficioComponent } from './components/empleadosoficio/empleados
     ComicsinyeccionComponent,
     PersonasapiComponent,
     EmpleadossalarioComponent,
-    EmpleadosoficioComponent
+    EmpleadosoficioComponent,
+    EmpleadosplantillaComponent,
+    EmpleadosroutingComponent,
+    DetallesempleadoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,HttpClientModule
   ],
-  providers: [ComicServices,PersonaService,EmpleadosService],
+  providers: [ComicServices,PersonaService,EmpleadosService,PlantillaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

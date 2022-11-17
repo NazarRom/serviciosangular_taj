@@ -1,0 +1,12 @@
+<div *ngIf="empleado">
+    <h1>
+        {{empleado.apellido}}
+    </h1>
+    <h1>
+        {{empleado.oficio}}
+    </h1>
+    <h1>
+        {{empleado.idEmpleado}}
+    </h1>
+    <a [routerLink]="['/emprouting']" class="btn btn-warning">Volver</a>
+</div>
