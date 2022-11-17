@@ -14,6 +14,7 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
 import { PersonaService } from './services/persona.service';
 import { EmpleadosService } from './services/empleados.service';
 import { EmpleadossalarioComponent } from './components/empleadossalario/empleadossalario.component';
+import { EmpleadosoficioComponent } from './components/empleadosoficio/empleadosoficio.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { EmpleadossalarioComponent } from './components/empleadossalario/emplead
     HomeComponent,
     ComicsinyeccionComponent,
     PersonasapiComponent,
-    EmpleadossalarioComponent
+    EmpleadossalarioComponent,
+    EmpleadosoficioComponent
   ],
   imports: [
     BrowserModule,
